@@ -10,14 +10,14 @@ class two_stacks:
             self.top1 = self.top1 + 1
             self.arr[self.top1] = x
         else:
-            print "Stack Overflow"
+            print("Stack Overflow")
 
     def push2(self, x):
         if self.top1 < self.top2-1:
             self.top2 = self.top2-1
             self.arr[self.top2] = x
         else:
-            print "Stack Overflow"
+            print("Stack Overflow")
 
     def pop1(self):
         if self.top1 >= 0:
@@ -25,7 +25,7 @@ class two_stacks:
             self.top1 = self.top1-1
             return x
         else:
-            print "Stack Underflow"
+            print("Stack Underflow")
 
     def pop2(self):
         if self.top1 < self.size:
@@ -33,7 +33,7 @@ class two_stacks:
             self.top2 = self.top2+1
             return x
         else:
-            print "Stack Underflow"
+            print("Stack Underflow")
 
 ts = two_stacks(5)
 ts.push1(5)

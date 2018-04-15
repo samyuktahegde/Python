@@ -1,0 +1,26 @@
+stack.append(inputSentence[i])
+            print(stack)
+            brace_count=brace_count+1
+            index_dictionary[brace_count]=[i]
+            print(index_dictionary)
+        elif inputSentence[i] in closing_braces:
+            if matching_braces.get(inputSentence[i]) == stack[-1]:
+                print(True)
+                # print(index_dictionary[len(stack)])
+                # print(index_dictionary[brace_count])
+                # index_dictionary[brace_count].append(i)
+                stack.pop()
+                brace_decrease=brace_count
+                index_dictionary[brace_decrease].append(i)
+                print(index_dictionary[brace_decrease])
+                brace_decrease=brace_decrease-1
+                print (brace_decrease)
+    print(index_dictionary)
+    # print(len(inputSentence))
+    if len(stack)==0:
+        if len(index_dictionary.get(openingBraceNum))>1:
+            return index_dictionary.get(openingBraceNum)[1]
+        else:
+            return -1
+    else:
+        return -1
