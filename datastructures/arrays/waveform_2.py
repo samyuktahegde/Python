@@ -8,4 +8,4 @@ def sort_in_wave(array, n):
 arr = [10, 90, 49, 2, 1, 5, 23]
 sort_in_wave(arr, len(arr))
 for i in range(0,len(arr)):
-    print arr[i], 
+    print (arr[i],)

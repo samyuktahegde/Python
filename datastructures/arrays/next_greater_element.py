@@ -5,7 +5,7 @@ def print_ge(array):
             if array[i] < array[j]:
                 next = array[j]
                 break
-        print str(array[i])+' --- '+str(next)
+        print(str(array[i])+' --- '+str(next))
 
 array = [11,13,21,3]
 print_ge(array)

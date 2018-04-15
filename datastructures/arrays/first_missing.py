@@ -4,8 +4,8 @@ def find_missing(array, start, end):
     if (start != array[start]):
         return start
     mid = int((start+end)/2)
-    print mid
-    print array[mid]
+    print(mid)
+    print(array[mid])
 
     if (array[mid] == mid):
         return find_missing(array, mid+1, end)
